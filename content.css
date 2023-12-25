@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+    font-family: "BitumLight";
+    src: url("../fonts/BitumLight.ttf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+}
+@font-face {
+    font-family: "BitumBold";
+    src: url("../fonts/BitumBold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Bitum";
+    src: url("../fonts/Bitum.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Bitum-LightItalic";
+    src: url("../fonts/Bitum-LightItalic.ttf") format("truetype");
+    font-style: Light italic;
+    font-weight: light italic; 
+}
+@font-face {
+    font-family: "Bitum-Italic";
+    src: url("../fonts/Bitum-Italic.ttf") format("truetype");
+    font-style: normal italic;
+    font-weight: italic; 
+}
+@font-face {
+    font-family: "Bitum-BoldItalic";
+    src: url("../fonts/Bitum-BoldItalic.ttf") format("truetype");
+    font-style: bold italic;
+    font-weight: bold italic; 
+}
+
+p{
+    font-family: 'CarlaSansLight';
+}
+
+
+.patternblock{
+    width: 100vw;
+    position: absolute;
+    z-index: 2000;
+    }
+    
+    
+    .pattern{
+        width: 73.5vw;
+        height: 117vw;
+        background: url(../img/Group\ 711\ —\ копия.png);
+        margin-top: 28vw;
+        margin-left: 24vw;
+        animation: change2 1s steps(1) infinite;
+    }
+    
+    @keyframes change2{
+        100% {background-position: 1260.704px 0;}
+        75% {background-position: 2521.408px 0; }
+        50% {background-position: 3782.112px 0;}
+        25% {background-position: 5042.816px 0;}
+        0% {background-position: 6303.52px 0;}
+    }
+
+.copypaste{
+    width: 60vw;
+    margin-top: 0vw;
+    
+position: absolute;
+}
+
+.move{
+    width: 100vw;
+    height: 20vw;
+    position: absolute;
+    background: #000494;
+    animation: move 2s linear infinite ;
+}
+
+@keyframes move {
+    0% {right: 100% }
+    100% {right: 0% }
+}
+
+.container{
+    width: 65vw;
+    height: 45vw;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.firstblock{
+    width: 100vw;
+    display: flex;
+    position: relative;
+    
+
+}
+.cubechange{
+position: relative;
+background: #EAEAEA;
+width: 35vw;
+display: flex;
+justify-content: center;
+}
+
+
+.cubes{
+width: 23vw;
+height: 38vw;
+position: absolute;
+
+background: url("../img/Group\ 696\ —\ копия.png");
+animation: change 1s steps(1) infinite;
+
+}
+
+@keyframes change{
+    1000% {background-position: 451px 0;}
+    80% {background-position: 902px 0; }
+    60% {background-position: 1353px 0;}
+    40% {background-position: 1804px 0;}
+    20% {background-position: 2255px 0;}
+    0% {background-position: 451px 0;}
+}
+
+
+.container2{
+    width: 100%;
+    background: white;
+    height: 546px;
+    display: flex;
+    
+    position: relative;
+    }
+    
+    
+    .secondblock{
+        width: 100vw;
+        display: flex;
+    }
+    .a1{
+        color: #000494;
+    font-family: Bitum;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 67.523%;
+    padding-top: 12vw;
+    padding-left: 9%;
+    position: absolute;
+    }
+
+   
+    
+    .a2{
+        color: #000494;
+        font-family: Bitum;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 67.523%;
+        position: absolute;
+        padding-left: 70%;
+        padding-top: 12vw;
+    }
+
+    .thirdblock{
+        width: 100vw;
+        height: 30vw;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .blueback{
+    width: 45vw;
+    position: relative;
+    background-color: #2228FA ;
+    z-index: 105;
+    }
+    
+    .container3{
+    width: 55vw;
+    position: relative;
+    background-color: #EAEAEA ;
+    }
+    
+    .grayback{
+        width: 1000vw;
+        height: 41vw;
+        position: absolute;
+        background-image: url("../img/Group\ 717\ —\ копия.png");
+        animation: grayback  10s linear infinite ;
+    }
+    
+    @keyframes grayback {
+        0%{ left: 100% ;}
+        100%{ left: -900% ;}
+    }
+.p1{
+    color: #FFF;
+font-family: BitumBold;
+font-size: 2vw;
+font-style: normal;
+font-weight: 700;
+line-height: 108.3%;
+margin-left: 5vw;
+margin-top: 5vw;
+
+}
+
+.p2{
+    color: #FFF;
+
+font-family: BitumLight;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 300;
+line-height: 108.3%;
+margin-left: 5vw;
+margin-top: 5vw;
+}
+
+.fourthblock{
+    width: 100vw;
+    height:12vw ;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.blueback2{
+    width: 100vw;
+position: relative;
+background-color: #2228FA ;
+}
+
+.container4{
+    width: 1000vw;
+    height: 5.5vw;
+    margin-top: 4%;
+    position: absolute;
+    background-image: url(../img/Group\ 722\ —\ копия.png);
+    animation: container4 15s linear infinite;
+}
+@keyframes container4{
+    100%{ left: 100% ;}
+    0%{ left: -900% ;}
+}
+
+.container5{
+    width: 100vw;
+    position: relative;
+
+
+}
+
+.setka{
+    width: 100vw;
+    height: 18vw;
+    z-index: 50;
+    position: absolute;
+    background: url(../img/Group\ 723\ —\ копия.png);
+    animation: setka 1s steps(1) infinite;
+}
+
+@keyframes setka{
+    100% {background-position: 1440px 0;}
+    75% {background-position: 2880px 0;}
+    50% {background-position: 4320px 0;}
+    25% {background-position: 5760px 0;}
+    0% {background-position: 7200px 0;}
+
+}
+
+.fifthblock{
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+.container6{
+    width: 100vw;
+    height: 44vw;
+    position: relative;
+    overflow: hidden;
+    background: #000494;
+}
+.cubetouch{
+    width: 24vw;
+ height: 44vw;
+ z-index: 60;
+    position: absolute;
+    background: url(../img/Group\ 732\ —\ копия.png);
+    animation: cubetouch 1s steps(1) infinite;
+
+}
+.cubetouch:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes cubetouch{
+    1000% {background-position: 413px 0;}
+    80% {background-position: 826px 0; }
+    60% {background-position: 1239px 0;}
+    40% {background-position: 1652px 0;}
+    20% {background-position: 2065px 0;}
+    0% {background-position: 2478px 0;}
+
+}
+
+.textcopy{
+    color: #FFF;
+font-family: Bitum;
+font-size: 8vw;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+z-index: 115;
+margin-top: 24vw;
+margin-left: 40vw;
+
+}
+
+.textcopy:hover{
+    font-size: 9vw;
+    margin-left: 37vw;
+    color: #2228FA;
+}
+
+.container7{
+    width: 50vw;
+height: 58.44vw;
+    position: absolute;
+    z-index: 130;
+}
+
+.pattern2{
+    margin-left: -20%;
+    margin-top: 10%;
+    position: absolute;
+    width: 59.2vw;
+height: 66vw;
+    background: url(../img/Group\ 739\ —\ копия.png);
+    animation: pattern2 1s steps(1) infinite;
+    
+}
+
+@keyframes pattern2{
+    100% {background-position: 1013px 0;}
+    75% {background-position: 2026px 0;}
+    50% {background-position: 3039px 0;}
+    25% {background-position: 4052px 0;}
+    0% {background-position: 5065px 0;}
+}
+
+.gifcube{
+    z-index: 120;
+    margin-left: 24vw;
+    margin-top: -5vw;
+}
+.gif2{
+    width: 1305px;
+    height: 1305px;
+    z-index: 120;
+    position: relative;
+    
+}
+
+.container8{
+    width: 100%;
+    position: relative;
+}
+
+.setka2{
+    width: 100%;
+    height: 368px;
+    background: url(../img/Group\ 746\ —\ копия.png);
+    animation: setka2 1s steps(1) infinite;
+
+}
+@keyframes setka2{
+    100% {background-position: 1710px 0;}
+    75% {background-position: 3420px 0;}
+    50% {background-position: 5130px 0;}
+    25% {background-position: 6840px 0;}
+    0% {background-position: 8550px 0;}
+}
+
+.setka2:hover{
+    animation-play-state: paused;
+}
+
+
+
